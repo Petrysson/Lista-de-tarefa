@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@600 & family= Noto+Sans:wght@700 & family= Pacifico & family= Roboto:wght@ 300;400;700 & family= Smooch+Sans:wght@100;400 & display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(19, 18, 18);
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(245, 253, 136);
+}
+
+span{
+    color: rgb(190, 204, 0);
+}
+
+/* HEADER -> CABEÇALHO */
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    border: 1px solid rgba(3, 138, 248, 0.315);
+    margin: auto auto;
+    padding: 5px;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 78%;
+    padding-left: 10%;
+
+    background-color: transparent;
+    color: rgb(190, 204, 0);
+
+    border-radius: 5px;
+    border: 1px solid rgba(135, 200, 253, 0.205);
+    outline: none;
+    cursor: pointer;
+}
+
+#button_add{
+    width: 20%;
+    height: 120px;
+    margin-left: 2%;
+    color: #ffffff;
+    border: 1px solid rgba(135, 200, 253, 0.205);
+    background-color: transparent;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#button_add:hover{
+    
+    background-color: rgba(217, 236, 252, 0.13);
+    color: rgb(246, 255, 124);
+}
+
+/* AREA DE TAREFAS */
+#list_area{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    
+    
+    padding-top: 40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.226);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(50, 147, 226, 0.432);
+    cursor: pointer;
+
+    border: 1px solid rgba(3, 138, 248, 0.315);
+    margin-bottom: 3%;
+}
+
+.item.clicked{
+    background-color: rgba(51, 35, 35, 0.226);
+}
+
+.item.clicked .item_name{
+    text-decoration: line-through;
+    color: #ffffff98;
+}
+
+.icon_item{
+    flex: 20%;
+
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.item_name{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.item_btn{
+    flex: 25%;
+    width: 100%;
+}
+
+.delete{
+    background-color: transparent;
+    color: #ffffff;
+    
+    border: none;
+    padding: 10px;
+    height: 78px;
+    width: 100%;
+    cursor: pointer;
+
+    border: 1px solid #ff0000;
+    transition: .3s;
+}
+
+.delete:hover{
+    background-color: rgba(250, 1, 1, 0.637);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*TAREFA CONCLUIDA*/
+.mdi-checkbox-marked-circle-outline{
+    color: green;
+}

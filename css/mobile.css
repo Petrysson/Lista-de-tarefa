@@ -1,0 +1,14 @@
+@media (max-width: 800px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+    input{
+        font-size: 1rem;
+        height: 80px;
+    }
+
+    #button_add{
+        height:80px;
+    }
+}
